@@ -10,8 +10,8 @@
     --clr-white: #F8F7FF;
     --clr-black: #090909;
     --clr-grey-1: #F6F6F6;
-    --clr-grey-2: #BBBBBB;
-    --clr-grey-3: #949494;
+    --clr-grey-2: #DBDBDB;
+    --clr-grey-3: #BBBBBB;
     --clr-grey-4: #949494;
     --clr-bg-lilac: #F1EEFB;
     --clr-bg-dark: #0F0726;
@@ -41,7 +41,7 @@
     --space-xl: 64px; 
 
     /* Border-radius */
-    --radius-sm: 14px;
+    --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
     --radius-pill: 999px;
@@ -69,6 +69,9 @@ a {
 
 .container {
     max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--space-md);
 }
 
 .btn {
