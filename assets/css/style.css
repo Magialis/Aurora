@@ -1,0 +1,178 @@
+:root {
+    /* Colors */
+    --clr-primary: #6A509D;
+    --clr-secondary: #7E61A7;
+    --clr-secondary-subtle: #DCD4FF;
+    --clr-tertiary: #CF4793;
+    --clr-tertiary-subtle:#FFCCDD;
+    --clr-accent: #31B4A6;
+    --clr-accent-subtle: #CAFFF5;
+    --clr-white: #F8F7FF;
+    --clr-black: #090909;
+    --clr-grey-1: #F6F6F6;
+    --clr-grey-2: #BBBBBB;
+    --clr-grey-3: #949494;
+    --clr-grey-4: #949494;
+    --clr-bg-lilac: #F1EEFB;
+    --clr-bg-dark: #0F0726;
+    --clr-bg-footer: #0B0520;
+    --clr-card-bg: rgba(255, 255, 255, .07);
+    --clr-card-border: rgba(255, 255, 255, .15);
+
+    /* Font-family */
+    --ff-title: "Outfit", sans-serif;
+    --ff-text: "Roboto", sans-serif;
+
+    /* Font-size */
+    --fs-hero: 4rem;
+    --fs-display: 3rem; 
+    --fs-heading: 2rem;
+    --fs-subheading: 1.5rem;
+    --fs-title: 1.25rem;
+    --fs-body: 1rem;
+    --fs-label: 0.875rem;
+    --fs-overline: 0.75rem;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 10px;
+    --space-md: 24px;
+    --space-lg: 56px;
+    --space-xl: 64px; 
+
+    /* Border-radius */
+    --radius-sm: 14px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 999px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-white);
+    font-family: var(--ff-text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-title);
+    line-height: 1;
+    font-size: var(--fs-title);
+    font-weight: 500;
+    color: var(--clr-white);
+    border-radius: var(--radius-md);
+    padding: 18px 26px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary);
+}
+
+.btn-hero {
+    background-color: var(--clr-tertiary);
+}
+
+.btn-light {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+
+/* CSS DO NAV */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO HERO */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DA LOGO-BAR */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO PROBLEM */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DA STATS-BAR */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DA ROI-CALCULATOR */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DA SOLUTION*/
+
+/* --------------------------------------- */
+
+
+
+/* CSS DA FEATURES */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO TESTIMONIALS */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO HOW-IT-WORKS */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO PLANS */
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO LEAD-FORM*/
+
+/* --------------------------------------- */
+
+
+
+/* CSS DO FOOTER */
+
+/* --------------------------------------- */
