@@ -33,19 +33,169 @@
         </section>
 
         <section class="problem">
-
+            <div class="container">
+                <h2 class="problem__title">Sua empresa toma decisões sobre pessoas sem dados reais?</h2>
+                <p class="problem__subtitle">Os desafios mais comuns dos líderes de RH e C-level que chegam até nós:</p>
+                <div class="problem__content">
+                    <img class="problem__image" src="./assets/images/problem.png" alt="">
+                    <div class="problem__cards">
+                        <div class="problem__card">
+                            <h3 class="problem__card__title problem__card__title--secondary">Dados espalhados em
+                                planilhas</h3>
+                            <p class="problem__card__text">Horas perdidas consolidando informações desconectadas, sem
+                                visão integrada para apresentar à diretoria.</p>
+                        </div>
+                        <div class="problem__card">
+                            <h3 class="problem__card__title problem__card__title--tertiary">Falta de direcionamento para
+                                líderes</h3>
+                            <p class="problem__card__text">Seus gestores sabem exatamente quem precisa de suporte e quem
+                                está pronto para crescer?</p>
+                        </div>
+                        <div class="problem__card">
+                            <h3 class="problem__card__title problem__card__title--accent">Impacto financeiro invisível
+                            </h3>
+                            <p class="problem__card__text">Cada desligamento custa de 50% a 200% da remuneração anual e
+                                a maioria não visualiza esse impacto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="stats-bar">
-
+            <div class="container">
+                <h2 class="stats-bar__title">O custo de decidir sem dados é alto</h2>
+                <p class="stats-bar__subtitle">Veja o impacto real da falta de analytics em gestão de pessoas</p>
+                <div class="stats-bar__cards">
+                    <div class="stats-bar__card">
+                        <h3 class="stats-bar__card__title">70%</h3>
+                        <p class="stats-bar__card__text">das empresas tomam decisões de RH sem dados confiáveis</p>
+                    </div>
+                    <div class="stats-bar__card">
+                        <h3 class="stats-bar__card__title">+190%</h3>
+                        <p class="stats-bar__card__text">de aumento na rotatividade quando há desalinhamento cultural
+                        </p>
+                    </div>
+                    <div class="stats-bar__card">
+                        <h3 class="stats-bar__card__title">5x</h3>
+                        <p class="stats-bar__card__text">maior custo de recontratação vs retenção eficaz</p>
+                    </div>
+                    <div class="stats-bar__card">
+                        <h3 class="stats-bar__card__title">40%</h3>
+                        <p class="stats-bar__card__text">do tempo de RH gasto em tarefas manuais e repetitivas</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="roi-calculator" id="calcular">
-
+            <div class="container">
+                <div class="roi-calculator__container">
+                    <h2 class="roi-calculator__title">Quanto custa o turnover na sua empresa?</h2>
+                    <p class="roi-calculator__subtitle">Descubra o impacto financeiro real dos desligamentos e quanto sua empresa pode economizar com decisões mais inteligentes sobre pessoas.</p>
+                    <div class="roi-calculator__inputs">
+                        <div class="roi-calculator__input">
+                            <p class="roi-calculator__input__label">Salário médio mensal (R$)</p>
+                            <div class="slider__row">
+                                <input class="slider" type="range" min="2000" max="30000" step="500" value="8000">
+                                <span class="slider__value">R$ 8.000</span>
+                            </div>
+                        </div>
+                        <div class="roi-calculator__input">
+                            <p class="roi-calculator__input__label">Nº de colaboradores</p>
+                            <div class="slider__row">
+                                <input class="slider" type="range" min="10" max="500" step="10" value="100">
+                                <span class="slider__value">100</span>
+                            </div>
+                        </div>
+                        <div class="roi-calculator__input">
+                            <p class="roi-calculator__input__label">Taxa de turnover anual (%)</p>
+                            <div class="slider__row">
+                                <input class="slider" type="range" min="5" max="60" step="1" value="18">
+                                <span class="slider__value">18%</span>
+                            </div>
+                        </div>
+                        <div class="roi-calculator__input">
+                            <p class="roi-calculator__input__label">Custo por desligamento (% do sal. anual)</p>
+                            <div class="slider__row">
+                                <input class="slider" type="range" min="50" max="200" step="10" value="100">
+                                <span class="slider__value">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roi-calculator__result">
+                        <div class="roi-calculator__result__card">
+                            <p class="roi-calculator__result__label">Desligamentos/ano</p>
+                            <p class="roi-calculator__result__value">18</p>
+                        </div>
+                        <div class="roi-calculator__result__card">
+                            <p class="roi-calculator__result__label">Custo por desligamento</p>
+                            <p class="roi-calculator__result__value">R$ 96k</p>
+                        </div>
+                        <div class="roi-calculator__result__card">
+                            <p class="roi-calculator__result__label">Impacto total anual</p>
+                            <p class="roi-calculator__result__value roi-calculator__result__value--highlight">R$ 1,7M</p>
+                        </div>
+                    </div>
+                    <div class="roi-calculator__metrics">
+                        <div class="roi-calculator__metrics__label">
+                            <p>Recrutamento &amp; seleção</p>
+                            <span>R$ 576k</span>
+                        </div>
+                        <div class="roi-calculator__metrics__track">
+                            <div class="bar-fill bar-fill--secondary"></div>
+                        </div>
+                        <div class="roi-calculator__metrics__label">
+                            <p>Perda de produtividade</p>
+                            <span>R$ 691k</span>
+                        </div>
+                        <div class="roi-calculator__metrics__track">
+                            <div class="bar-fill bar-fill--tertiary"></div>
+                        </div>
+                        <div class="roi-calculator__metrics__label">
+                            <p>Treinamento &amp; integração</p>
+                            <span>R$ 461k</span>
+                        </div>
+                        <div class="roi-calculator__metrics__track">
+                            <div class="bar-fill bar-fill--accent"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-hero btn-calculator">Ver como a Aurora reduz esse custo</button>
+            </div>
         </section>
 
         <section class="solution" id="solucao">
-
+            <div class="container">
+                <h2 class="solution__title">E se a Aurora pudesse mudar isso?</h2>
+                <p class="solution__subtitle">Cada problema tem uma solução baseada em dados reais da sua empresa.</p>
+                <div class="solution__cards">
+                    <div class="solution__card">
+                        <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
+                        <p class="solution__card__text solution__card__text--subtle">Turnover alto sem causa identificada</p>
+                        <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
+                        <p class="solution__card__text">Prediçãode turnover com 87% de precisão</p>
+                    </div>
+                    <div class="solution__card">
+                        <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
+                        <p class="solution__card__text solution__card__text--subtle">Contratações baseadas em intuição</p>
+                        <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
+                        <p class="solution__card__text">Match de perfil baseado em dados comportamentais</p>
+                    </div>
+                    <div class="solution__card">
+                        <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
+                        <p class="solution__card__text solution__card__text--subtle">Clima organizacional desconhecido</p>
+                        <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
+                        <p class="solution__card__text">Painel de engajamento em tempo real</p>
+                    </div>
+                    <div class="solution__card">
+                        <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
+                        <p class="solution__card__text solution__card__text--subtle">Promoções sem critérios claros</p>
+                        <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
+                        <p class="solution__card__text">Mapeamento de performance e potencial</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="features" id="funcionalidades">
