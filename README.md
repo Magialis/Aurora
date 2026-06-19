@@ -1,5 +1,7 @@
 # Aurora - Landing Page Institucional
 
+> Protótipo navegável desenvolvido como primeira entrega do Enterprise Challenge.
+
 ## 📖 Sobre o Projeto
 
 Aurora é uma plataforma de People Analytics desenvolvida para transformar dados de Recursos Humanos em decisões estratégicas de negócio.
@@ -7,6 +9,46 @@ Aurora é uma plataforma de People Analytics desenvolvida para transformar dados
 Este projeto consiste na criação de uma landing page institucional voltada ao mercado B2B, com foco na apresentação da proposta de valor da plataforma, fortalecimento da credibilidade da marca e geração de leads qualificados.
 
 O desenvolvimento foi realizado como parte do Enterprise Challenge, aplicando conceitos de UX Design, arquitetura da informação, acessibilidade e marketing digital.
+
+---
+
+## 🚧 Status do Projeto
+
+Este projeto representa a **primeira entrega do Enterprise Challenge**, focada na concepção e validação da experiência da landing page da Aurora.
+
+Nesta etapa, o objetivo não era desenvolver uma solução completa em produção, mas sim construir um **protótipo navegável** capaz de comunicar a proposta de valor da plataforma, validar decisões de UX e demonstrar a estrutura da futura experiência digital.
+
+### Escopo da Primeira Entrega
+
+- Estruturação completa da landing page institucional.
+- Definição e aplicação da identidade visual da Aurora.
+- Construção da arquitetura da informação.
+- Navegação funcional entre as seções da página.
+- Criação do formulário de captação de leads.
+- Prototipação de funcionalidades estratégicas para conversão.
+- Aplicação de conceitos de UX Design, acessibilidade e marketing digital.
+
+### Funcionalidades Prototipadas
+
+Alguns recursos apresentados nesta versão possuem caráter conceitual e foram desenvolvidos para demonstrar a experiência pretendida ao usuário, podendo receber integrações e implementações completas nas próximas fases do projeto.
+
+Entre eles:
+
+- Calculadora de ROI.
+- Calendário de agendamento integrado ao formulário.
+- Simulações de dashboards e indicadores.
+- Fluxos de conversão e geração de leads.
+
+### Próximas Etapas
+
+As futuras entregas do projeto poderão contemplar:
+
+- Integração do formulário com serviços de captura de leads.
+- Implementação real do sistema de agendamento.
+- Integração com APIs e banco de dados.
+- Funcionalidades avançadas de People Analytics.
+- Otimizações de performance e SEO.
+- Publicação e deploy da aplicação.
 
 ---
 
@@ -55,15 +97,18 @@ Foram analisadas referências relevantes do mercado de HR Tech:
 
 ## 🧠 Estratégia de Comunicação
 
-A landing page foi estruturada utilizando o modelo PAS:
+A landing page foi estruturada utilizando o modelo PAS.
 
 ### Problem
+
 Identificação dos principais desafios enfrentados por líderes de RH e executivos.
 
 ### Agitate
+
 Demonstração dos impactos financeiros e operacionais gerados pela falta de dados confiáveis.
 
 ### Solution
+
 Apresentação da Aurora como uma plataforma estratégica capaz de transformar dados em decisões de negócio.
 
 ---
@@ -86,7 +131,7 @@ A navegação foi planejada para acompanhar a jornada de decisão do usuário:
 
 ---
 
-## ✨ Funcionalidades Destacadas
+## ✨ Soluções Destacadas da Plataforma Aurora
 
 ### 📊 Analytics de Turnover
 
@@ -111,6 +156,8 @@ Avaliação de fit cultural e técnico baseada em dados comportamentais.
 ### 🔒 Segurança e LGPD
 
 Proteção de dados, controle de acessos e conformidade com a LGPD.
+
+> **Observação:** As funcionalidades acima representam a proposta de valor comunicada pela landing page e não implementações funcionais desta primeira entrega.
 
 ---
 
@@ -146,7 +193,11 @@ Depoimentos e indicadores foram distribuídos estrategicamente ao longo da pági
 
 ### CTAs Distribuídos ao Longo da Jornada
 
-Também foi adotada uma estratégia de conversão baseada na distribuição de Call To Actions (CTAs) em diferentes pontos da landing page. Em vez de concentrar todas as oportunidades de contato apenas no formulário final, botões de ação foram posicionados estrategicamente após seções de alto valor percebido, como a calculadora de ROI, funcionalidades e prova social.
+Foi adotada uma estratégia de conversão baseada na distribuição de Call To Actions (CTAs) em diferentes pontos da landing page.
+
+Em vez de concentrar todas as oportunidades de contato apenas no formulário final, botões de ação foram posicionados estrategicamente após seções de alto valor percebido, como a calculadora de ROI, funcionalidades e prova social.
+
+Essa abordagem respeita diferentes momentos da jornada de decisão do usuário, reduz atritos de navegação e aumenta as oportunidades de conversão em leads qualificados.
 
 ---
 
@@ -174,17 +225,25 @@ A identidade visual da Aurora utiliza tons de roxo e rosa para transmitir:
 
 ### Tipografia
 
-- **Outfit** → títulos e subtítulos
-- **Roboto** → textos e conteúdos de apoio
+- **Outfit** → títulos e subtítulos.
+- **Roboto** → textos e conteúdos de apoio.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
+### Desenvolvimento
+
 - HTML5
 - CSS3
 - JavaScript
+
+### Design e Prototipação
+
 - Figma
+
+### Versionamento
+
 - Git
 - GitHub
 
@@ -196,11 +255,9 @@ A identidade visual da Aurora utiliza tons de roxo e rosa para transmitir:
 git clone https://github.com/seu-usuario/aurora.git
 
 cd aurora
-
-# Abra o arquivo index.html
 ```
 
-Ou utilize a extensão **Live Server** do VS Code.
+Abra o arquivo `index.html` diretamente no navegador ou utilize a extensão **Live Server** do VS Code para uma melhor experiência de desenvolvimento.
 
 ---
 
@@ -211,5 +268,3 @@ Ou utilize a extensão **Live Server** do VS Code.
 - Laura Moreno Higino Zapata
 - Matheus Felipe Berti
 - Renato Fideliz dos Santos Menezes
-
----
