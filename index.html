@@ -17,70 +17,81 @@
 
 <body>
 
-    <header>
-        <nav class="nav">
-            <div class="nav-brand">
-                <img src="./assets/images/logo-colorido.png" alt="Logo da Aurora" class="nav-logo">
+    <header class="nav">
+        <nav class="nav__container">
+            <div class="nav__brand">
+                <a href="#hero">
+                    <img src="./assets/images/logo-colorido.png" alt="Logo da Aurora" class="nav__logo">
+                </a>
             </div>
-            <ul class="nav-links">
+            <ul class="nav__links">
                 <li><a href="#calcular">Calcular ROI</a></li>
                 <li><a href="#solucao">Solução</a></li>
                 <li><a href="#funcionalidades">Funcionalidades</a></li>
                 <li><a href="#planos">Planos</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-            <button class="btn btn-hero">Agendar demonstração</button>   
+            <a class="btn btn-primary" href="#formulario">Agendar demonstração</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="box">
-                    <p>✦</p>
-                    <p>Plataforma de People Analytics</p>
-                </div>
-            </div>
-            <h1 class="hero-title">Decisões sobre pessoas <span>guiadas por dados.</span></h1>
-            <h2 class="hero-subtitle">Transforme sua gestão de pessoas com inteligência analítica. A Aurora conecta dados de RH para revelar insights que impulsionam o crescimento da sua equipe.</h2>
-            <div class="hero-buttons">
-                <button class="btn btn-hero">Agendar demonstração</button>
-                <button class="btn btn-light">Saber mais</button>
-            </div>
-            <div class="hero-info">
-                <div class="hero-info-item">
-                    <p class="hero-info-number">96%</p>
-                    <p class="hero-info-text">Satisfação dos clientes</p>
-                </div>
-                <div class="hero-info-item">
-                    <p class="hero-info-number">3+</p>
-                    <p class="hero-info-text">Anos de mercado</p>
-                </div>
-                <div class="hero-info-item">
-                    <p class="hero-info-number">100%</p>
-                    <p class="hero-info-text">Segurança de dados</p>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="box">
+                        <p>✦</p>
+                        <p>Plataforma de People Analytics</p>
+                    </div>
+                    <h1 class="hero__title">Decisões sobre pessoas <span>guiadas por dados.</span></h1>
+                    <h2 class="hero__subtitle">Transforme sua gestão de pessoas com inteligência analítica. A Aurora
+                        conecta
+                        dados de RH para revelar insights que impulsionam o crescimento da sua equipe.</h2>
+                    <div class="hero__buttons">
+                        <a class="btn btn-primary" href="#formulario">Agendar demonstração</a>
+                        <button class="btn btn-secondary">Saber mais</button>
+                    </div>
+                    <div class="hero__info">
+                        <div class="hero__info__item">
+                            <p class="hero__info__number">96%</p>
+                            <p class="hero__info__text">Satisfação dos clientes</p>
+                        </div>
+                        <div class="hero__info__item">
+                            <p class="hero__info__number">3+</p>
+                            <p class="hero__info__text">Anos de mercado</p>
+                        </div>
+                        <div class="hero__info__item">
+                            <p class="hero__info__number">100%</p>
+                            <p class="hero__info__text">Segurança de dados</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="logo-bar">
-            <div class="logo-bar-container">
-                <p class="logo-bar-text">Empresas que lideram o mercado já confiam na Aurora para decisões estratégicas de RH.</p>
-                <div class="logo-bar-logos">
-                    <img src="./assets/images/Logo-01.png" alt="Accenture" class="logo-bar-item-01">
-                    <img src="./assets/images/Logo-02.png" alt="Deloitte" class="logo-bar-item-02">
-                    <img src="./assets/images/Logo-03.png" alt="Totvs" class="logo-bar-item-03">
-                    <img src="./assets/images/Logo-04.png" alt="Nestle" class="logo-bar-item-04">
-                    <img src="./assets/images/Logo-05.png" alt="Ambev" class="logo-bar-item-05">
-                    <img src="./assets/images/Logo-06.png" alt="Bradesco" class="logo-bar-item-06">
+            <div class="container section__container">
+                <p class="section__subtitle">Empresas que lideram o mercado já confiam na Aurora para decisões
+                    estratégicas
+                    de RH.</p>
+                <div class="logo-bar__logos">
+                    <img src="./assets/images/Logo-01.png" alt="Accenture">
+                    <img src="./assets/images/Logo-02.png" alt="Deloitte">
+                    <img src="./assets/images/Logo-03.png" alt="Totvs">
+                    <img src="./assets/images/Logo-04.png" alt="Nestle">
+                    <img src="./assets/images/Logo-05.png" alt="Ambev">
+                    <img src="./assets/images/Logo-06.png" alt="Vivo">
                 </div>
             </div>
         </section>
 
-        <section class="problem">
-            <div class="container">
-                <h2 class="problem__title">Sua empresa toma decisões sobre pessoas sem dados reais?</h2>
-                <p class="problem__subtitle">Os desafios mais comuns dos líderes de RH e C-level que chegam até nós:</p>
+        <section class="problem section__padding">
+            <div class="container section__container section__container--xl">
+                <div class="section__header">
+                    <h2 class="section__title">Sua empresa toma decisões sobre pessoas sem dados reais?</h2>
+                    <p class="section__subtitle">Os desafios mais comuns dos líderes de RH e C-level que chegam até nós:
+                    </p>
+                </div>
                 <div class="problem__content">
                     <img class="problem__image" src="./assets/images/problem.png" alt="">
                     <div class="problem__cards">
@@ -108,9 +119,12 @@
         </section>
 
         <section class="stats-bar">
-            <div class="container">
-                <h2 class="stats-bar__title">O custo de decidir sem dados é alto</h2>
-                <p class="stats-bar__subtitle">Veja o impacto real da falta de analytics em gestão de pessoas</p>
+            <div class="container section__container section__container--xl">
+                <div class="section__header">
+                    <h2 class="section__title section__title--dark-bg">O custo de decidir sem dados é alto</h2>
+                    <p class="section__subtitle section__subtitle--dark-bg">Veja o impacto real da falta de analytics em
+                        gestão de pessoas.</p>
+                </div>
                 <div class="stats-bar__cards">
                     <div class="stats-bar__card">
                         <h3 class="stats-bar__card__title">70%</h3>
@@ -133,11 +147,15 @@
             </div>
         </section>
 
-        <section class="roi-calculator" id="calcular">
+        <section class="roi-calculator section__padding" id="calcular">
             <div class="container">
-                <div class="roi-calculator__container">
-                    <h2 class="roi-calculator__title">Quanto custa o turnover na sua empresa?</h2>
-                    <p class="roi-calculator__subtitle">Descubra o impacto financeiro real dos desligamentos e quanto sua empresa pode economizar com decisões mais inteligentes sobre pessoas.</p>
+                <div class="roi-calculator__container section__container">
+                    <div class="section__header">
+                        <h2 class="section__title section__title--dark-bg">Quanto custa o turnover na sua empresa?</h2>
+                        <p class="section__subtitle section__subtitle--dark-bg">Descubra o impacto financeiro real dos
+                            desligamentos e quanto
+                            sua empresa pode economizar com decisões mais inteligentes sobre pessoas.</p>
+                    </div>
                     <div class="roi-calculator__inputs">
                         <div class="roi-calculator__input">
                             <p class="roi-calculator__input__label">Salário médio mensal (R$)</p>
@@ -179,7 +197,8 @@
                         </div>
                         <div class="roi-calculator__result__card">
                             <p class="roi-calculator__result__label">Impacto total anual</p>
-                            <p class="roi-calculator__result__value roi-calculator__result__value--highlight">R$ 1,7M</p>
+                            <p class="roi-calculator__result__value roi-calculator__result__value--highlight">R$ 1,7M
+                            </p>
                         </div>
                     </div>
                     <div class="roi-calculator__metrics">
@@ -206,30 +225,36 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-hero btn-calculator">Ver como a Aurora reduz esse custo</button>
+                <a class="btn btn-primary btn-calc" href="#formulario">Ver como a Aurora reduz esse custo</a>
             </div>
         </section>
 
-        <section class="solution" id="solucao">
-            <div class="container">
-                <h2 class="solution__title">E se a Aurora pudesse mudar isso?</h2>
-                <p class="solution__subtitle">Cada problema tem uma solução baseada em dados reais da sua empresa.</p>
+        <section class="solution section__padding" id="solucao">
+            <div class="container section__container section__container--xl">
+                <div class="section__header">
+                    <h2 class="section__title">E se a Aurora pudesse mudar isso?</h2>
+                    <p class="section__subtitle">Cada problema tem uma solução baseada em dados reais da sua empresa.
+                    </p>
+                </div>
                 <div class="solution__cards">
                     <div class="solution__card">
                         <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
-                        <p class="solution__card__text solution__card__text--subtle">Turnover alto sem causa identificada</p>
+                        <p class="solution__card__text solution__card__text--subtle">Turnover alto sem causa
+                            identificada</p>
                         <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
                         <p class="solution__card__text">Prediçãode turnover com 87% de precisão</p>
                     </div>
                     <div class="solution__card">
                         <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
-                        <p class="solution__card__text solution__card__text--subtle">Contratações baseadas em intuição</p>
+                        <p class="solution__card__text solution__card__text--subtle">Contratações baseadas em intuição
+                        </p>
                         <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
                         <p class="solution__card__text">Match de perfil baseado em dados comportamentais</p>
                     </div>
                     <div class="solution__card">
                         <span class="solution__card__tag solution__card__tag--tertiary">Problema</span>
-                        <p class="solution__card__text solution__card__text--subtle">Clima organizacional desconhecido</p>
+                        <p class="solution__card__text solution__card__text--subtle">Clima organizacional desconhecido
+                        </p>
                         <span class="solution__card__tag solution__card__tag--primary">Aurora</span>
                         <p class="solution__card__text">Painel de engajamento em tempo real</p>
                     </div>
@@ -243,694 +268,520 @@
             </div>
         </section>
 
-<section class="features" id="funcionalidades">
-    <div class="features__container container">
-
-        <div class="features__header">
-            <h2 class="features__title">
-                Funcionalidades Principais
-            </h2>
-
-            <p class="features__subtitle">
-                Tudo o que sua equipe precisa para transformar dados em decisões estratégicas.
-            </p>
-        </div>
-
-        <div class="features__cta">
-            <a href="#agendar" class="btn btn-hero features__button">
-                Quero ver na prática
-            </a>
-        </div>
-
-        <div class="features__grid">
-
-            <article class="features__card features__card--purple">
-                <img src="./assets/images/analytics de turnover.png" alt="Analytics de Turnover"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Analytics de Turnover
-                </h3>
-
-                <p class="features__card-text">
-                    Identifique padrões de saída, antecipe riscos e retenha talentos estratégicos.
-                </p>
-            </article>
-
-            <article class="features__card features__card--pink">
-                <img src="./assets/images/mapa de talentos.png" alt="Mapa de Talentos"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Mapa de Talentos
-                </h3>
-
-                <p class="features__card-text">
-                    Visualize competências, potencial e sucessão em um único lugar.
-                </p>
-            </article>
-
-            <article class="features__card features__card--green">
-                <img src="./assets/images/pesquisa de clima.png" alt="Pesquisa de Clima"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Pesquisa de Clima
-                </h3>
-
-                <p class="features__card-text">
-                    Colete feedback contínuo e acompanhe o engajamento da equipe em tempo real.
-                </p>
-            </article>
-
-            <article class="features__card features__card--purple">
-                <img src="./assets/images/recrutamento inteligente.png" alt="Recrutamento Inteligente"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Recrutamento Inteligente
-                </h3>
-
-                <p class="features__card-text">
-                    Utilize IA para acelerar contratações e encontrar perfis aderentes.
-                </p>
-            </article>
-
-            <article class="features__card features__card--pink">
-                <img src="./assets/images/dashboards executivos.png" alt="Dashboards Executivos"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Dashboards Executivos
-                </h3>
-
-                <p class="features__card-text">
-                    Acompanhe indicadores estratégicos com visualizações claras e acionáveis.
-                </p>
-            </article>
-
-            <article class="features__card features__card--green">
-                <img src="./assets/images/segurança.png" alt="Segurança e LGPD"
-                    class="features__image">
-
-                <h3 class="features__card-title">
-                    Segurança e LGPD
-                </h3>
-
-                <p class="features__card-text">
-                    Proteja informações sensíveis com processos alinhados às exigências legais.
-                </p>
-            </article>
-
-        </div>
-
-    </div>
-</section>
-
-        <section class="testimonials">
-
-    <div class="testimonials__container container">
-
-        <div class="testimonials__header">
-
-            <span class="testimonials__label">
-                QUEM USA, RECOMENDA
-            </span>
-
-            <h2 class="testimonials__title">
-                O que dizem os nossos clientes
-            </h2>
-
-            <p class="testimonials__subtitle">
-                Empresas de diferentes portes já transformaram a gestão de pessoas com a Aurora.
-            </p>
-
-        </div>
-
-        <div class="testimonials__grid">
-
-            <article class="testimonials__card">
-
-                <img src="./assets/images/quote-purple.svg"
-                    alt=""
-                    class="testimonials__quote-icon">
-
-                <img src="./assets/images/stars.svg"
-                    alt="5 estrelas"
-                    class="testimonials__stars">
-
-                <p class="testimonials__quote">
-                    “A Aurora transformou a forma como tomamos decisões. Em três meses, reduzimos custos operacionais em 22% e ganhamos visibilidade total dos nossos processos.”
-                </p>
-
-                <div class="testimonials__author">
-
-                    <img src="./assets/images/avatar-mariana.svg"
-                        alt="Mariana Costa"
-                        class="testimonials__avatar">
-
-                    <div class="testimonials__info">
-                        <h3 class="testimonials__name">
-                            Mariana Costa
-                        </h3>
-
-                        <p class="testimonials__role">
-                            Gerente de RH • TechNova
+        <section class="features section__padding" id="funcionalidades">
+            <div class="container section__container">
+                <div class="section__header">
+                    <h2 class="section__title">Funcionalidades Principais</h2>
+                    <p class="section__subtitle">Tudo o que sua equipe precisa para transformar dados em decisões
+                        estratégicas.</p>
+                </div>
+                <a href="#formulario" class="btn btn-primary">
+                    Quero ver na prática
+                </a>
+                <div class="features__grid">
+                    <article class="features__card features__card--purple">
+                        <img src="./assets/images/analytics de turnover.png" alt="Analytics de Turnover"
+                            class="features__image">
+                        <h3 class="features__card-title">Analytics de Turnover</h3>
+                        <p class="features__card-text">Identifique padrões de saída, antecipe riscos e retenha talentos
+                            estratégicos.</p>
+                    </article>
+                    <article class="features__card features__card--pink">
+                        <img src="./assets/images/mapa de talentos.png" alt="Mapa de Talentos" class="features__image">
+                        <h3 class="features__card-title">Mapa de Talentos</h3>
+                        <p class="features__card-text">Visualize competências, potencial e sucessão em um único lugar.
                         </p>
-                    </div>
-
+                    </article>
+                    <article class="features__card features__card--green">
+                        <img src="./assets/images/pesquisa de clima.png" alt="Pesquisa de Clima"
+                            class="features__image">
+                        <h3 class="features__card-title">Pesquisa de Clima</h3>
+                        <p class="features__card-text">Colete feedback contínuo e acompanhe o engajamento da equipe em
+                            tempo real.</p>
+                    </article>
+                    <article class="features__card features__card--purple">
+                        <img src="./assets/images/recrutamento inteligente.png" alt="Recrutamento Inteligente"
+                            class="features__image">
+                        <h3 class="features__card-title">Recrutamento Inteligente</h3>
+                        <p class="features__card-text">Utilize IA para acelerar contratações e encontrar perfis
+                            aderentes.</p>
+                    </article>
+                    <article class="features__card features__card--pink">
+                        <img src="./assets/images/dashboards executivos.png" alt="Dashboards Executivos"
+                            class="features__image">
+                        <h3 class="features__card-title">Dashboards Executivos</h3>
+                        <p class="features__card-text">Acompanhe indicadores estratégicos com visualizações claras e
+                            acionáveis.</p>
+                    </article>
+                    <article class="features__card features__card--green">
+                        <img src="./assets/images/segurança.png" alt="Segurança e LGPD" class="features__image">
+                        <h3 class="features__card-title">Segurança e LGPD</h3>
+                        <p class="features__card-text">Proteja informações sensíveis com processos alinhados às
+                            exigências legais.</p>
+                    </article>
                 </div>
-
-            </article>
-
-            <article class="testimonials__card">
-
-                <img src="./assets/images/quote-pink.svg"
-                    alt=""
-                    class="testimonials__quote-icon">
-
-                <img src="./assets/images/stars.svg"
-                    alt="5 estrelas"
-                    class="testimonials__stars">
-
-                <p class="testimonials__quote">
-                    “A integração foi surpreendentemente simples e o suporte é excepcional. A plataforma é robusta, segura e escalou junto com o nosso crescimento sem fricção.”
-                </p>
-
-                <div class="testimonials__author">
-
-                    <img src="./assets/images/avatar-rafael.svg"
-                        alt="Rafael Oliveira"
-                        class="testimonials__avatar">
-
-                    <div class="testimonials__info">
-                        <h3 class="testimonials__name">
-                            Rafael Oliveira
-                        </h3>
-
-                        <p class="testimonials__role">
-                            CEO • InovaCorp
-                        </p>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <article class="testimonials__card">
-
-                <img src="./assets/images/quote-green.svg"
-                    alt=""
-                    class="testimonials__quote-icon">
-
-                <img src="./assets/images/stars.svg"
-                    alt="5 estrelas"
-                    class="testimonials__stars">
-
-                <p class="testimonials__quote">
-                    “Interface intuitiva e dados em tempo real que realmente fazem diferença. A Aurora virou peça central na nossa estratégia de crescimento B2B.”
-                </p>
-
-                <div class="testimonials__author">
-
-                    <img src="./assets/images/avatar-patricia.svg"
-                        alt="Patrícia Mendes"
-                        class="testimonials__avatar">
-
-                    <div class="testimonials__info">
-                        <h3 class="testimonials__name">
-                            Patrícia Mendes
-                        </h3>
-
-                        <p class="testimonials__role">
-                            Diretora de Pessoas • Grupo Nexus
-                        </p>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-        <section class="how-it-works">
-
-    <div class="how-it-works__container container">
-
-        <div class="how-it-works__header">
-
-            <h2 class="how-it-works__title">
-                Como funciona
-            </h2>
-
-            <p class="how-it-works__subtitle">
-                Da integração dos dados à tomada de decisão baseada em evidências.
-            </p>
-
-        </div>
-
-        <div class="how-it-works__steps">
-
-            <div class="how-it-works__row">
-
-                <article class="how-it-works__card">
-
-                    <span class="how-it-works__number">01</span>
-
-                    <h3 class="how-it-works__card-title">
-                        Conecte suas fontes
-                    </h3>
-
-                    <p class="how-it-works__card-text">
-                        Integre sistemas de RH, planilhas e ferramentas utilizadas pela empresa.
-                    </p>
-
-                </article>
-
-                <img src="./assets/images/conecte suas fontes.png"
-                    alt="Conecte suas fontes"
-                    class="how-it-works__image">
-
             </div>
-
-            <div class="how-it-works__row">
-
-                <img src="./assets/images/configure seu painel.png"
-                    alt="Configure seu painel"
-                    class="how-it-works__image">
-
-                <article class="how-it-works__card">
-
-                    <span class="how-it-works__number">02</span>
-
-                    <h3 class="how-it-works__card-title">
-                        Configure seu painel
-                    </h3>
-
-                    <p class="how-it-works__card-text">
-                        Escolha indicadores estratégicos e personalize visualizações.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <div class="how-it-works__row">
-
-                <article class="how-it-works__card">
-
-                    <span class="how-it-works__number">03</span>
-
-                    <h3 class="how-it-works__card-title">
-                        Receba insights
-                    </h3>
-
-                    <p class="how-it-works__card-text">
-                        A inteligência analisa padrões e identifica oportunidades de melhoria.
-                    </p>
-
-                </article>
-
-                <img src="./assets/images/receba insights.png"
-                    alt="Receba insights"
-                    class="how-it-works__image">
-
-            </div>
-
-            <div class="how-it-works__row">
-
-                <img src="./assets/images/decida com confiança.png"
-                    alt="Decida com confiança"
-                    class="how-it-works__image">
-
-                <article class="how-it-works__card">
-
-                    <span class="how-it-works__number">04</span>
-
-                    <h3 class="how-it-works__card-title">
-                        Decida com confiança
-                    </h3>
-
-                    <p class="how-it-works__card-text">
-                        Transforme dados em ações concretas para impulsionar resultados.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="plans" id="planos">
-
-            <section class="plans-r">
-    <div class="container">
-        
-        <div class="plans__header-r">
-            <h2 class="plans__title-r">Planos</h2>
-            <p class="plans__subtitle-r">Escolha o plano ideal para o tamanho e maturidade do RH da sua empresa.</p>
-        </div>
-        
-        <div class="plans__grid-r">
-            
-            <article class="card-r card--rosa-r">
-                <h3 class="card__title-r">ROSA</h3>
-                
-                <ul class="card__features-r">
-                    <li>Visão geral da empresa</li>
-                    <li>Funil de contratação</li>
-                    <li>Mapa de colaboradores</li>
-                    <li>Lowlights e Highlights</li>
-                </ul>
-                
-                <div class="card__pricing-table-r">
-                    <div class="card__pricing-header-rosa-r">
-                        <span>Nº de Colaboradores</span>
-                        <span>Valor por Colaborador</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>&lt; 50</span>
-                        <span>R$ 20</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>50 - 250</span>
-                        <span>R$ 15</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>250+</span>
-                        <span>R$ 10</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-r card--violeta-r">
-                <h3 class="card__title-r">VIOLETA</h3>
-                
-                <button class="card__badge-btn-r">Rosa</button>
-                
-                <ul class="card__features-r">
-                    <li>Inteligência Artificial</li>
-                    <li>Plano de Ação - Individual</li>
-                </ul>
-                
-                <div class="card__pricing-table-r">
-                    <div class="card__pricing-header-violeta-r">
-                        <span>Nº de Colaboradores</span>
-                        <span>Valor por Colaborador</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>&lt; 50</span>
-                        <span>R$ 25</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>50 - 250</span>
-                        <span>R$ 20</span>
-                    </div>
-                    <div class="card__pricing-row-r">
-                        <span>250+</span>
-                        <span>R$ 15</span>
-                    </div>
-                </div>
-            </article>
-            
-        </div>
-    </div>
-</section>
-
         </section>
 
-        <section class="faq" id="faq">
-
-            <section class="faq-r">
-    <div class="container faq__container-r">
-        
-        <div class="faq__content-r">
-            <div class="faq__background-r">
-                <span class="faq__label-r">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_603_2314)"><path d="M7.00033 12.8337C10.222 12.8337 12.8337 10.222 12.8337 7.00033C12.8337 3.77866 10.222 1.16699 7.00033 1.16699C3.77866 1.16699 1.16699 3.77866 1.16699 7.00033C1.16699 10.222 3.77866 12.8337 7.00033 12.8337Z" stroke="#6B46C1" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.30273 5.25033C5.43988 4.86047 5.71057 4.53173 6.06687 4.32233C6.42318 4.11292 6.84209 4.03638 7.24942 4.10625C7.65675 4.17612 8.02621 4.38789 8.29236 4.70406C8.55851 5.02023 8.70418 5.42039 8.70357 5.83367C8.70357 7.00033 6.95357 7.58367 6.95357 7.58367" stroke="#6B46C1" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 9.91699H7.00583" stroke="#6B46C1" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_603_2314"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
-
-                <p>PERGUNTAS FREQUENTES</p>
-            </span>
-            </div>
-            <h2 class="faq__title-r">Tudo o que você precisa saber</h2>
-            <p class="faq__description-r">Reunimos as dúvidas mais comuns sobre a plataforma Aurora. Não encontrou o que procurava?</p>
-            
-            <a href="#" class="btn btn-hero faq__btn-r">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                Fale com um especialista
-            </a>
-        </div>
-
-        <div class="faq__accordion-r">
-            
-            <details class="accordion__item-r" open>
-                <summary class="accordion__header-r">
-                    O que é a plataforma Aurora?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>A Aurora é uma solução tecnológica B2B que centraliza processos, dados e indicadores em um único lugar, ajudando empresas a inovar com eficiência, segurança e crescimento sustentável.</p>
+        <section class="testimonials section__padding">
+            <div class="container section__container">
+                <div class="section__header">
+                    <span class="testimonials__label">QUEM USA, RECOMENDA</span>
+                    <h2 class="section__title">O que dizem os nossos clientes</h2>
+                    <p class="section__subtitle">Empresas de diferentes portes já transformaram a gestão de pessoas com
+                        a Aurora.</p>
                 </div>
-            </details>
-
-            <details class="accordion__item-r">
-                <summary class="accordion__header-r">
-                    Quanto tempo leva a implementação?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>O tempo de implementação varia de acordo com o tamanho da empresa e os módulos escolhidos, mas nossa equipe de especialistas garante um processo ágil e guiado passo a passo.</p>
-                </div>
-            </details>
-
-            <details class="accordion__item-r">
-                <summary class="accordion__header-r">
-                    A plataforma é segura?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>Sim, utilizamos protocolos de criptografia de ponta e seguimos rigorosamente todas as normas da LGPD para garantir a segurança total dos dados da sua empresa.</p>
-                </div>
-            </details>
-
-            <details class="accordion__item-r">
-                <summary class="accordion__header-r">
-                    A Aurora se integra com as ferramentas que já uso?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>Possuímos API aberta e integrações nativas com os principais softwares de mercado (ERP, folha de pagamento, ponto eletrônico, etc).</p>
-                </div>
-            </details>
-
-            <details class="accordion__item-r">
-                <summary class="accordion__header-r">
-                    Como funciona o suporte?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>Oferecemos suporte humanizado em horário comercial, além de uma central de ajuda completa e tutoriais em vídeo disponíveis 24/7.</p>
-                </div>
-            </details>
-
-            <details class="accordion__item-r">
-                <summary class="accordion__header-r">
-                    Existe um período de teste ou demonstração?
-                    <span class="accordion__icon-r"></span>
-                </summary>
-                <div class="accordion__body-r">
-                    <p>Sim! Você pode agendar uma demonstração gratuita com nossos especialistas e testar a plataforma por 14 dias sem compromisso.</p>
-                </div>
-            </details>
-
-        </div>
-    </div>
-</section>
-
-        </section>
-
-        <section class="lead-form" id="formulario">
-            <section class="aurora-capture-r">
-    <div class="container aurora-capture__container-r">
-        
-        <header class="aurora-header-r">
-            <h2 class="aurora-header__title-r">Pronto para protagonizar o fenômeno?</h2>
-            <p class="aurora-header__subtitle-r">Deixe seus dados e nossa equipe entrará em contato para mostrar como a Aurora gera valor real para a sua empresa.</p>
-            
-            <ul class="aurora-benefits-r">
-                <li class="aurora-benefits__item-r">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.691 19.5988C15.6112 19.5988 19.5998 15.6102 19.5998 10.69C19.5998 5.76985 15.6112 1.78125 10.691 1.78125C5.77082 1.78125 1.78223 5.76985 1.78223 10.69C1.78223 15.6102 5.77082 19.5988 10.691 19.5988Z" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.01855 10.6919L9.80031 12.4737L13.3638 8.91016" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    Diagnóstico gratuito da sua operação
-                </li>
-                <li class="aurora-benefits__item-r">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.691 19.5988C15.6112 19.5988 19.5998 15.6102 19.5998 10.69C19.5998 5.76985 15.6112 1.78125 10.691 1.78125C5.77082 1.78125 1.78223 5.76985 1.78223 10.69C1.78223 15.6102 5.77082 19.5988 10.691 19.5988Z" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.01855 10.6919L9.80031 12.4737L13.3638 8.91016" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    Demonstração guiada da plataforma Aurora
-                </li>
-                <li class="aurora-benefits__item-r">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.691 19.5988C15.6112 19.5988 19.5998 15.6102 19.5998 10.69C19.5998 5.76985 15.6112 1.78125 10.691 1.78125C5.77082 1.78125 1.78223 5.76985 1.78223 10.69C1.78223 15.6102 5.77082 19.5988 10.691 19.5988Z" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.01855 10.6919L9.80031 12.4737L13.3638 8.91016" stroke="#31B4A6" stroke-width="1.78176" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    Proposta personalizada em até 48h
-                </li>
-            </ul>
-        </header>
-
-        <div class="aurora-content-grid-r">
-            
-            <form class="aurora-form-r">
-                <div class="aurora-form__group-r">
-                    <label class="aurora-form__label-r">Nome completo</label>
-                    <div class="aurora-form__input-wrapper-r">
-                        <svg class="aurora-form__field-icon-r" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        <input class="aurora-form__input-r" type="text" placeholder="Seu nome" required autocomplete="name">
-                    </div>
-                </div>
-
-                <div class="aurora-form__group-r">
-                    <label class="aurora-form__label-r">Empresa</label>
-                    <div class="aurora-form__input-wrapper-r">
-                        <svg class="aurora-form__field-icon-r" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                        <input class="aurora-form__input-r" type="text" placeholder="Nome da empresa" required>
-                    </div>
-                </div>
-
-                <div class="aurora-form__group-r">
-                    <label class="aurora-form__label-r">E-mail corporativo</label>
-                    <div class="aurora-form__input-wrapper-r">
-                        <svg class="aurora-form__field-icon-r" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <input class="aurora-form__input-r" type="email" placeholder="voce@empresa.com" required autocomplete="email">
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-hero aurora-form__submit-r">
-                    <svg class="aurora-form__submit-icon-r" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    Quero falar com a Aurora
-                </button>
-                
-                <p class="aurora-form__disclaimer-r">Seus dados estão protegidos. Sem spam.</p>
-            </form>
-
-            <div class="aurora-scheduler-r">
-                <div class="aurora-calendar-r">
-                    <div class="aurora-calendar__header-r">
-                        <button type="button" class="aurora-calendar__arrow-r">&lt;</button>
-                        <div class="aurora-calendar__selects-r">
-                            <select class="aurora-calendar__select-r"><option>Junho</option></select>
-                            <select class="aurora-calendar__select-r"><option>2026</option></select>
+                <div class="testimonials__grid">
+                    <article class="testimonials__card">
+                        <img src="./assets/images/quote-purple.svg" alt="" class="testimonials__quote-icon">
+                        <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                        <p class="testimonials__quote">“A Aurora transformou a forma como tomamos decisões. Em três
+                            meses, reduzimos custos operacionais em 22% e ganhamos visibilidade total dos nossos
+                            processos.”</p>
+                        <div class="testimonials__author">
+                            <img src="./assets/images/avatar-mariana.svg" alt="Mariana Costa"
+                                class="testimonials__avatar">
+                            <div class="testimonials__info">
+                                <h3 class="testimonials__name">Mariana Costa</h3>
+                                <p class="testimonials__role">Gerente de RH • TechNova</p>
+                            </div>
                         </div>
-                        <button type="button" class="aurora-calendar__arrow-r">&gt;</button>
-                    </div>
-                    
-                    <div class="aurora-calendar__weekdays-r">
-                        <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
-                    </div>
-                    
-                    <div class="aurora-calendar__days-r">
-                        <span class="aurora-calendar__day-r aurora-calendar__day--empty-r"></span>
-                        <span class="aurora-calendar__day-r">1</span>
-                        <span class="aurora-calendar__day-r">2</span>
-                        <span class="aurora-calendar__day-r">3</span>
-                        <span class="aurora-calendar__day-r">4</span>
-                        <span class="aurora-calendar__day-r">5</span>
-                        <span class="aurora-calendar__day-r">6</span>
-                        <span class="aurora-calendar__day-r">7</span>
-                        <span class="aurora-calendar__day-r">8</span>
-                        <span class="aurora-calendar__day-r">9</span>
-                        <span class="aurora-calendar__day-r">10</span>
-                        <span class="aurora-calendar__day-r aurora-calendar__day--active-r">11</span>
-                        <span class="aurora-calendar__day-r">12</span>
-                        <span class="aurora-calendar__day-r">13</span>
-                        <span class="aurora-calendar__day-r">14</span>
-                        <span class="aurora-calendar__day-r">15</span>
-                        <span class="aurora-calendar__day-r">16</span>
-                        <span class="aurora-calendar__day-r">17</span>
-                        <span class="aurora-calendar__day-r">18</span>
-                        <span class="aurora-calendar__day-r">19</span>
-                        <span class="aurora-calendar__day-r">20</span>
-                        <span class="aurora-calendar__day-r">21</span>
-                        <span class="aurora-calendar__day-r">22</span>
-                        <span class="aurora-calendar__day-r">23</span>
-                        <span class="aurora-calendar__day-r">24</span>
-                        <span class="aurora-calendar__day-r">25</span>
-                        <span class="aurora-calendar__day-r">26</span>
-                        <span class="aurora-calendar__day-r">27</span>
-                        <span class="aurora-calendar__day-r">28</span>
-                        <span class="aurora-calendar__day-r">29</span>
-                        <span class="aurora-calendar__day-r">30</span>
-                        <span class="aurora-calendar__day-r aurora-calendar__day--next-month-r">1</span>
-                        <span class="aurora-calendar__day-r aurora-calendar__day--next-month-r">2</span>
-                        <span class="aurora-calendar__day-r aurora-calendar__day--next-month-r">3</span>
-                        <span class="aurora-calendar__day-r aurora-calendar__day--next-month-r">4</span>
-                    </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <img src="./assets/images/quote-pink.svg" alt="" class="testimonials__quote-icon">
+                        <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                        <p class="testimonials__quote">“A integração foi surpreendentemente simples e o suporte é
+                            excepcional. A plataforma é robusta, segura e escalou junto com o nosso crescimento sem
+                            fricção.”</p>
+                        <div class="testimonials__author">
+                            <img src="./assets/images/avatar-rafael.svg" alt="Rafael Oliveira"
+                                class="testimonials__avatar">
+                            <div class="testimonials__info">
+                                <h3 class="testimonials__name">Rafael Oliveira</h3>
+                                <p class="testimonials__role">CEO • InovaCorp</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonials__card">
+                        <img src="./assets/images/quote-green.svg" alt="" class="testimonials__quote-icon">
+                        <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                        <p class="testimonials__quote">“Interface intuitiva e dados em tempo real que realmente fazem
+                            diferença. A Aurora viroupeça central na nossa estratégia de crescimento B2B.”</p>
+                        <div class="testimonials__author">
+                            <img src="./assets/images/avatar-patricia.svg" alt="Patrícia Mendes"
+                                class="testimonials__avatar">
+                            <div class="testimonials__info">
+                                <h3 class="testimonials__name">Patrícia Mendes</h3>
+                                <p class="testimonials__role">Diretora de Pessoas • Grupo Nexus</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works section__padding">
+            <div class="container section__container">
+                <div class="section__header">
+                    <h2 class="section__title">Como funciona</h2>
+                    <p class="section__subtitle">Da integração dos dados à tomada de decisão baseada em evidências.</p>
                 </div>
 
-                <div class="aurora-time-panel-r">
-                    <p class="aurora-time-panel__label-r">Horários disponíveis</p>
-                    <div class="aurora-time-panel__slots-r">
-                        <button type="button" class="aurora-time-panel__slot-r aurora-time-panel__slot--selected-r">14:30</button>
-                        <button type="button" class="aurora-time-panel__slot-r">15:00</button>
-                        <button type="button" class="aurora-time-panel__slot-r">15:30</button>
+                <div class="how-it-works__steps">
+                    <div class="how-it-works__row">
+                        <article class="how-it-works__card">
+                            <span class="how-it-works__number">01</span>
+                            <h3 class="how-it-works__card__title">Conecte suas fontes</h3>
+                            <p class="how-it-works__card__text">Integre sistemas de RH, planilhas e ferramentas
+                                utilizadas pela</p>
+                        </article>
+                        <img src="./assets/images/conecte suas fontes.png" alt="Conecte suas fontes"
+                            class="how-it-works__image">
+                    </div>
+                    <div class="how-it-works__row">
+                        <img src="./assets/images/configure seu painel.png" alt="Configure seu painel"
+                            class="how-it-works__image">
+                        <article class="how-it-works__card">
+                            <span class="how-it-works__number">02</span>
+                            <h3 class="how-it-works__card__title">Configure seu painel</h3>
+                            <p class="how-it-works__card__text">Escolha indicadores estratégicos e personalize
+                                visualizações.</p>
+                        </article>
+                    </div>
+                    <div class="how-it-works__row">
+                        <article class="how-it-works__card">
+                            <span class="how-it-works__number">03</span>
+                            <h3 class="how-it-works__card__title">Receba insights</h3>
+                            <p class="how-it-works__card__text">A inteligência analisa padrões e identifica
+                                oportunidades
+                                de melhoria.</p>
+                        </article>
+                        <img src="./assets/images/receba insights.png" alt="Receba insights"
+                            class="how-it-works__image">
+                    </div>
+                    <div class="how-it-works__row">
+                        <img src="./assets/images/decida com confiança.png" alt="Decida com confiança"
+                            class="how-it-works__image">
+                        <article class="how-it-works__card">
+                            <span class="how-it-works__number">04</span>
+                            <h3 class="how-it-works__card__title">Decida com confiança</h3>
+                            <p class="how-it-works__card__text">Transforme dados em ações concretas para impulsionar
+                                resultados.</p>
+                        </article>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-</section>
         </section>
 
+        <section class="plans section__padding" id="planos">
+            <div class="container section__container">
+                <div class="section__header">
+                    <h2 class="section__title">Planos</h2>
+                    <p class="section__subtitle">Escolha o plano ideal para o tamanho e maturidade do RH da sua
+                        empresa.</p>
+                </div>
+                <div class="plans__cards">
+                    <article class="plans__card">
+                        <h3 class="plans__card__title plans__card__title--tertiary">ROSA</h3>
+                        <ul class="plans__card__benefits">
+                            <li>Visão geral da empresa</li>
+                            <li>Funil de contratação</li>
+                            <li>Mapa de colaboradores</li>
+                            <li>Lowlights e Highlights</li>
+                        </ul>
+                        <table class="plans__card__pricing__table">
+                            <thead>
+                                <tr
+                                    class="plans__card__pricing__table__header plans__card__pricing__table__header--tertiary">
+                                    <th scope="col">Nº de Colaboradores</th>
+                                    <th scope="col">Valor por Colaborador</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--tertiary">
+                                    <td>&lt; 50</td>
+                                    <td>R$ 20</td>
+                                </tr>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--tertiary">
+                                    <td>50 - 250</td>
+                                    <td>R$ 15</td>
+                                </tr>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--tertiary">
+                                    <td>250+</td>
+                                    <td>R$ 10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article class="plans__card">
+                        <h3 class="plans__card__title plans__card__title--primary">VIOLETA</h3>
+                        <ul class="plans__card__benefits">
+                            <li class="pink-benefit">ROSA</li>
+                            <li>Inteligência Artificial</li>
+                            <li>Plano de Ação - Individual</li>
+                        </ul>
+                        <table class="plans__card__pricing__table">
+                            <thead>
+                                <tr
+                                    class="plans__card__pricing__table__header plans__card__pricing__table__header--primary">
+                                    <th scope="col">Nº de Colaboradores</th>
+                                    <th scope="col">Valor por Colaborador</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--primary">
+                                    <td>&lt; 50</td>
+                                    <td>R$ 25</td>
+                                </tr>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--primary">
+                                    <td>50 - 250</td>
+                                    <td>R$ 20</td>
+                                </tr>
+                                <tr class="plans__card__pricing__table__row plans__card__pricing__table__row--primary">
+                                    <td>250+</td>
+                                    <td>R$ 15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+        </section>
+
+        <section class="faq section__padding" id="faq">
+            <div class="container faq__container">
+                <div class="faq__content">
+                    <span class="faq__label">
+                        <i class="ph ph-question"></i>
+                        <p>PERGUNTAS FREQUENTES</p>
+                    </span>
+                    <h2 class="section__title faq__title">Tudo o que você precisa saber</h2>
+                    <p class="section__subtitle faq__subtitle">Reunimos as dúvidas mais comuns sobre a plataforma
+                        Aurora. Não
+                        encontrou o que procurava?</p>
+                    <a href="#" class="btn btn-primary">
+                        <i class="ph ph-chat-circle"></i>
+                        Fale com um especialista
+                    </a>
+                </div>
+
+                <div class="faq__accordion">
+                    <details class="accordion__item" open>
+                        <summary class="accordion__header">
+                            O que é a plataforma Aurora?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>A Aurora é uma solução tecnológica B2B que centraliza processos, dados e indicadores
+                                em um único lugar, ajudando empresas a inovar com eficiência, segurança e
+                                crescimento sustentável.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__header">
+                            Quanto tempo leva a implementação?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>O tempo de implementação varia de acordo com o tamanho da empresa e os módulos
+                                escolhidos, mas nossa equipe de especialistas garante um processo ágil e guiado
+                                passo a passo.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__header">
+                            A plataforma é segura?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Sim, utilizamos protocolos de criptografia de ponta e seguimos rigorosamente todas as
+                                normas da LGPD para garantir a segurança total dos dados da sua empresa.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__header">
+                            A Aurora se integra com as ferramentas que já uso?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Possuímos API aberta e integrações nativas com os principais softwares de mercado
+                                (ERP, folha de pagamento, ponto eletrônico, etc).</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__header">
+                            Como funciona o suporte?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Oferecemos suporte humanizado em horário comercial, além de uma central de ajuda
+                                completa e tutoriais em vídeo disponíveis 24/7.</p>
+                        </div>
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__header">
+                            Existe um período de teste ou demonstração?
+                            <span class="accordion__icon"></span>
+                        </summary>
+                        <div class="accordion__body">
+                            <p>Sim! Você pode agendar uma demonstração gratuita com nossos especialistas e testar a
+                                plataforma por 14 dias sem compromisso.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="lead-form section__padding" id="formulario">
+            <div class="container section__container">
+                <header class="section__header">
+                    <h2 class="section__title section__title--dark-bg">Pronto para protagonizar o fenômeno?</h2>
+                    <p class="section__subtitle section__subtitle--dark-bg">Deixe seus dados e nossa equipe entrará em
+                        contato para
+                        mostrar como a Aurora gera valor real para a sua empresa.</p>
+                </header>
+                <ul class="lead-benefits">
+                    <li class="lead-benefits__item">
+                        <i class="ph ph-check-circle"></i>
+                        Diagnóstico gratuito da sua operação
+                    </li>
+                    <li class="lead-benefits__item">
+                        <i class="ph ph-check-circle"></i>
+                        Demonstração guiada da plataforma Aurora
+                    </li>
+                    <li class="lead-benefits__item">
+                        <i class="ph ph-check-circle"></i>
+                        Proposta personalizada em até 48h
+                    </li>
+                </ul>
+                <div class="lead__content">
+                    <form class="lead__form">
+                        <div>
+                            <label class="lead__form__label">Nome completo</label>
+                            <div class="lead__form__field">
+                                <i class="ph ph-user lead__form__field__icon"></i>
+                                <input class="lead__form__field__input" type="text" placeholder="Seu nome" required
+                                    autocomplete="name">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="lead__form__label">Empresa</label>
+                            <div class="lead__form__field">
+                                <i class="ph ph-buildings lead__form__field__icon"></i>
+                                <input class="lead__form__field__input" type="text" placeholder="Nome da empresa"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="lead__form__label">E-mail corporativo</label>
+                            <div class="lead__form__field">
+                                <i class="ph ph-envelope-simple lead__form__field__icon"></i>
+                                <input class="lead__form__field__input" type="email" placeholder="voce@empresa.com"
+                                    required autocomplete="email">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-form">
+                            <i class="ph ph-paper-plane-tilt"></i>
+                            Quero falar com a Aurora
+                        </button>
+                        <p class="lead__form__disclaimer">Seus dados estão protegidos. Sem spam.</p>
+                    </form>
+                    <div class="lead-scheduler">
+                        <div class="calendar">
+                            <div class="calendar__header">
+                                <button type="button" class="calendar__arrow"><i class="ph ph-caret-left"></i></button>
+                                <div class="calendar__selects">
+                                    <select class="calendar__select">
+                                        <option>Junho</option>
+                                    </select>
+                                    <select class="calendar__select">
+                                        <option>2026</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="calendar__arrow"><i class="ph ph-caret-right"></i></button>
+                            </div>
+                            <table class="calendar__table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">D</th>
+                                        <th scope="col">S</th>
+                                        <th scope="col">T</th>
+                                        <th scope="col">Q</th>
+                                        <th scope="col">Q</th>
+                                        <th scope="col">S</th>
+                                        <th scope="col">S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="calendar__day calendar__day--empty"></td>
+                                        <td class="calendar__day">1</td>
+                                        <td class="calendar__day">2</td>
+                                        <td class="calendar__day">3</td>
+                                        <td class="calendar__day">4</td>
+                                        <td class="calendar__day">5</td>
+                                        <td class="calendar__day">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="calendar__day">7</td>
+                                        <td class="calendar__day">8</td>
+                                        <td class="calendar__day">9</td>
+                                        <td class="calendar__day">10</td>
+                                        <td class="calendar__day calendar__day--active">11</td>
+                                        <td class="calendar__day">12</td>
+                                        <td class="calendar__day">13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="calendar__day">14</td>
+                                        <td class="calendar__day">15</td>
+                                        <td class="calendar__day">16</td>
+                                        <td class="calendar__day">17</td>
+                                        <td class="calendar__day">18</td>
+                                        <td class="calendar__day">19</td>
+                                        <td class="calendar__day">20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="calendar__day">21</td>
+                                        <td class="calendar__day">22</td>
+                                        <td class="calendar__day">23</td>
+                                        <td class="calendar__day">24</td>
+                                        <td class="calendar__day">25</td>
+                                        <td class="calendar__day">26</td>
+                                        <td class="calendar__day">27</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="calendar__day">28</td>
+                                        <td class="calendar__day">29</td>
+                                        <td class="calendar__day">30</td>
+                                        <td class="calendar__day calendar__day--next-month">1</td>
+                                        <td class="calendar__day calendar__day--next-month">2</td>
+                                        <td class="calendar__day calendar__day--next-month">3</td>
+                                        <td class="calendar__day calendar__day--next-month">4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="hour">
+                            <p class="hour__label">Horários disponíveis</p>
+                            <div class="hour__buttons">
+                                <button type="button" class="btn btn-ghost btn-ghost--selected">14:30</button>
+                                <button type="button" class="btn btn-ghost">15:00</button>
+                                <button type="button" class="btn btn-ghost">15:30</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-section">
-            <div class="footer-section-one">
-                <div class="footer-brand">
-                    <img src="./assets/images/logo-branco.png" alt="Logo da Aurora" class="footer-logo">
+    <footer class="footer section__padding">
+        <div class="container">
+            <div class="footer__section">
+                <div class="footer__brand">
+                    <div>
+                        <img src="./assets/images/logo-branco.png" alt="Logo da Aurora" class="footer__brand__logo">
+                    </div>
+                    <p class="footer__brand__description">Tecnologia que gera resultados reais para empresas<br> que
+                        buscam
+                        inovação, eficiência e crescimento sustentável.</p>
                 </div>
-                <p class="footer-description">Tecnologia que gera resultados reais para empresas<br> que buscam inovação, eficiência e crescimento sustentável.</p>
+                <div class="footer__itens">
+                    <h3 class="footer__itens__title">Solução</h3>
+                    <ul class="footer__itens__links">
+                        <li><a href="#plataforma">Plataforma</a></li>
+                        <li><a href="#seguranca">Segurança</a></li>
+                        <li><a href="#integracoes">Integrações</a></li>
+                        <li><a href="#performance">Perfomance</a></li>
+                    </ul>
+                </div>
+                <div class="footer__itens">
+                    <h3 class="footer__itens__title">Empresa</h3>
+                    <ul class="footer__itens__links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#carreiras">Carreiras</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer__itens">
+                    <h3 class="footer__itens__title">Recursos</h3>
+                    <ul class="footer__itens__links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#documentacao">Documentação</a></li>
+                        <li><a href="#suporte">Suporte</a></li>
+                        <li><a href="#status">Status</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section-itens">
-                <h3 class="footer-title">Solução</h3>
-                <ul class="footer-links">
-                    <li><a href="#plataforma">Plataforma</a></li>
-                    <li><a href="#seguranca">Segurança</a></li>
-                    <li><a href="#integracoes">Integrações</a></li>
-                    <li><a href="#performance">Perfomance</a></li>
-                </ul>
-            </div>
-            <div class="footer-section-itens">
-                <h3 class="footer-title">Empresa</h3>
-                <ul class="footer-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#carreiras">Carreiras</a></li>
-                    <li><a href="#parceiros">Parceiros</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-section-itens">
-                <h3 class="footer-title">Recursos</h3>
-                <ul class="footer-links">
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#documentacao">Documentação</a></li>
-                    <li><a href="#suporte">Suporte</a></li>
-                    <li><a href="#status">Status</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="footer-section-bottom">
-            <p class="footer-copyright">© 2024 Aurora. Todos os direitos reservados.</p>
-            <div class="footer-terms">
-                <ul class="footer-terms-links">
-                    <li><a href="#privacidade">Privacidade</a></li>
-                    <li><a href="#termos">Termos</a></li>
-                </ul>
+            <div class="footer__divider"></div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Aurora. Todos os direitos reservados.</p>
+                <div class="footer__terms">
+                    <ul class="footer__terms__links">
+                        <li><a href="#privacidade">Privacidade</a></li>
+                        <li><a href="#termos">Termos</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
