@@ -58,7 +58,6 @@
 
     /* Dimensions */
     --nav-h: 96px;
-
 }
 
 * {
@@ -85,13 +84,14 @@ a {
     text-decoration: none;
 }
 
-.container {
+.custom-container {
     max-width: 1280px;
     width: 100%;
     margin-inline: auto;
+    padding-inline: 32px;
 }
 
-.btn {
+.custom-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,38 +110,37 @@ a {
     transition: background-color 0.2s ease;
 }
 
-.btn-primary {
+.custom-btn-primary {
     background-color: var(--clr-tertiary);
     color: var(--clr-white);
 }
 
-.btn-secondary {
+.custom-btn-secondary {
     background-color: var(--clr-white);
     color: var(--clr-black);
 }
 
-.btn-ghost {
+.custom-btn-ghost {
     background-color: var(--clr-card-bg);
     color: var(--clr-white);
     border: 1px solid var(--clr-card-border);
     border-radius: var(--radius-sm);
 }
 
-.btn-primary:hover {
+.custom-btn-primary:hover {
     background-color: var(--clr-secondary);
 }
 
-.btn-secondary:hover {
+.custom-btn-secondary:hover {
     background-color: var(--clr-accent-subtle);
 }
 
-
-.btn-ghost:hover {
+.custom-btn-ghost:hover {
     background-color: var(--clr-white);
     color: var(--clr-black);
 }
 
-.btn-ghost--selected {
+.custom-btn-ghost--selected {
     background-color: var(--clr-white);
     color: var(--clr-black);
     border-color: var(--clr-white);
@@ -1296,3 +1295,94 @@ a {
     color: var(--clr-tertiary-subtle);
 }
 /* --------------------------------------- */
+
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 16px;
+    }
+
+    .section__padding {
+        padding-block: var(--space-xl);
+    }
+
+    .section__header {
+        gap: var(--space-sm);
+    }
+
+    .section__container {
+        gap: var(--space-xl);
+    }
+
+    .section__container--xl {
+        gap: var(--space-xl);
+    }
+
+    /* nav */
+    
+    /* ------- */
+
+
+    /* hero */
+    
+    /* ------- */
+
+
+    /* logo-bar */
+    
+    /* ------- */
+
+
+    /* problem */
+    
+    /* ------- */
+
+
+    /* stats-bar */
+    
+    /* ------- */
+
+
+    /* roi-calculator */
+    
+    /* ------- */    
+
+
+    /* solution */
+    
+    /* ------- */
+
+
+    /* features */
+    
+    /* ------- */
+
+
+    /* testimonials */
+    
+    /* ------- */
+
+
+    /* how-it-works */
+    
+    /* ------- */
+
+
+    /* plans */
+    
+    /* ------- */
+
+
+    /* faq */
+    
+    /* ------- */
+
+
+    /* lead-form */
+    
+    /* ------- */
+
+
+    /* footer */
+    
+    /* ------- */
+}
