@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
@@ -27,14 +27,21 @@
                     <img src="./assets/images/logo-colorido.png" alt="Logo da Aurora" class="nav__logo">
                 </a>
             </div>
-            <ul class="nav__links">
-                <li><a href="#calcular">Calcular ROI</a></li>
-                <li><a href="#solucao">Solução</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-                <li><a href="#planos">Planos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <a class="custom-btn custom-btn-primary" href="#formulario">Agendar demonstração</a>
+            <button class="nav__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+                aria-controls="navCollapse" aria-expanded="false" aria-label="Abrir menu">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <div class="collapse nav__collapse" id="navCollapse">
+                <ul class="nav__links">
+                    <li><a href="#calcular">Calcular ROI</a></li>
+                    <li><a href="#solucao">Solução</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <a class="custom-btn custom-btn-primary nav__cta" href="#formulario">Agendar demonstração</a>
+            </div>
         </nav>
     </header>
 
@@ -77,13 +84,25 @@
                 <p class="section__subtitle">Empresas que lideram o mercado já confiam na Aurora para decisões
                     estratégicas
                     de RH.</p>
-                <div class="logo-bar__logos">
-                    <img src="./assets/images/Logo-01.png" alt="Accenture">
-                    <img src="./assets/images/Logo-02.png" alt="Deloitte">
-                    <img src="./assets/images/Logo-03.png" alt="Totvs">
-                    <img src="./assets/images/Logo-04.png" alt="Nestle">
-                    <img src="./assets/images/Logo-05.png" alt="Ambev">
-                    <img src="./assets/images/Logo-06.png" alt="Vivo">
+                <div class="logo-bar__carousel" aria-label="Empresas que confiam na Aurora">
+                    <div class="logo-bar__track">
+                        <div class="logo-bar__group" aria-hidden="false">
+                            <img src="./assets/images/Logo-01.png" alt="Accenture">
+                            <img src="./assets/images/Logo-02.png" alt="Deloitte">
+                            <img src="./assets/images/Logo-03.png" alt="Totvs">
+                            <img src="./assets/images/Logo-04.png" alt="Nestle">
+                            <img src="./assets/images/Logo-05.png" alt="Ambev">
+                            <img src="./assets/images/Logo-06.png" alt="Vivo">
+                        </div>
+                        <div class="logo-bar__group" aria-hidden="true">
+                            <img src="./assets/images/Logo-01.png" alt="">
+                            <img src="./assets/images/Logo-02.png" alt="">
+                            <img src="./assets/images/Logo-03.png" alt="">
+                            <img src="./assets/images/Logo-04.png" alt="">
+                            <img src="./assets/images/Logo-05.png" alt="">
+                            <img src="./assets/images/Logo-06.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -228,7 +247,8 @@
                         </div>
                     </div>
                 </div>
-                <a class="custom-btn custom-btn-primary custom-btn-calc" href="#formulario">Ver como a Aurora reduz esse custo</a>
+                <a class="custom-btn custom-btn-primary custom-btn-calc" href="#formulario">Ver como a Aurora reduz esse
+                    custo</a>
             </div>
         </section>
 
@@ -275,8 +295,9 @@
             <div class="custom-container section__container">
                 <div class="section__header">
                     <h2 class="section__title">Funcionalidades Principais</h2>
-                    <p class="section__subtitle">Tudo o que sua equipe precisa para transformar dados em decisões
-                        estratégicas.</p>
+                    <p class="section__subtitle">
+                        Tudo o que sua equipe precisa para transformar dados em decisões estratégicas.
+                    </p>
                 </div>
                 <a href="#formulario" class="custom-btn custom-btn-primary">
                     Quero ver na prática
@@ -286,42 +307,126 @@
                         <img src="./assets/images/analytics de turnover.png" alt="Analytics de Turnover"
                             class="features__image">
                         <h3 class="features__card-title">Analytics de Turnover</h3>
-                        <p class="features__card-text">Identifique padrões de saída, antecipe riscos e retenha talentos
-                            estratégicos.</p>
+                        <p class="features__card-text">
+                            Identifique padrões de saída, antecipe riscos e retenha talentos estratégicos.
+                        </p>
                     </article>
                     <article class="features__card features__card--pink">
                         <img src="./assets/images/mapa de talentos.png" alt="Mapa de Talentos" class="features__image">
                         <h3 class="features__card-title">Mapa de Talentos</h3>
-                        <p class="features__card-text">Visualize competências, potencial e sucessão em um único lugar.
+                        <p class="features__card-text">
+                            Visualize competências, potencial e sucessão em um único lugar.
                         </p>
                     </article>
                     <article class="features__card features__card--green">
                         <img src="./assets/images/pesquisa de clima.png" alt="Pesquisa de Clima"
                             class="features__image">
                         <h3 class="features__card-title">Pesquisa de Clima</h3>
-                        <p class="features__card-text">Colete feedback contínuo e acompanhe o engajamento da equipe em
-                            tempo real.</p>
+                        <p class="features__card-text">
+                            Colete feedback contínuo e acompanhe o engajamento da equipe em tempo real.
+                        </p>
                     </article>
                     <article class="features__card features__card--purple">
                         <img src="./assets/images/recrutamento inteligente.png" alt="Recrutamento Inteligente"
                             class="features__image">
                         <h3 class="features__card-title">Recrutamento Inteligente</h3>
-                        <p class="features__card-text">Utilize IA para acelerar contratações e encontrar perfis
-                            aderentes.</p>
+                        <p class="features__card-text">
+                            Utilize IA para acelerar contratações e encontrar perfis aderentes.
+                        </p>
                     </article>
                     <article class="features__card features__card--pink">
                         <img src="./assets/images/dashboards executivos.png" alt="Dashboards Executivos"
                             class="features__image">
                         <h3 class="features__card-title">Dashboards Executivos</h3>
-                        <p class="features__card-text">Acompanhe indicadores estratégicos com visualizações claras e
-                            acionáveis.</p>
+                        <p class="features__card-text">
+                            Acompanhe indicadores estratégicos com visualizações claras e acionáveis.
+                        </p>
                     </article>
                     <article class="features__card features__card--green">
                         <img src="./assets/images/segurança.png" alt="Segurança e LGPD" class="features__image">
                         <h3 class="features__card-title">Segurança e LGPD</h3>
-                        <p class="features__card-text">Proteja informações sensíveis com processos alinhados às
-                            exigências legais.</p>
+                        <p class="features__card-text">
+                            Proteja informações sensíveis com processos alinhados às exigências legais.
+                        </p>
                     </article>
+                </div>
+                <div id="featuresCarousel" class="carousel slide features__carousel dots-carousel" data-bs-interval="false"
+                    data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <article class="features__card features__card--purple">
+                                <img src="./assets/images/analytics de turnover.png" alt="Analytics de Turnover"
+                                    class="features__image">
+                                <h3 class="features__card-title">Analytics de Turnover</h3>
+                                <p class="features__card-text">
+                                    Identifique padrões de saída, antecipe riscos e retenha talentos estratégicos.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="features__card features__card--pink">
+                                <img src="./assets/images/mapa de talentos.png" alt="Mapa de Talentos"
+                                    class="features__image">
+                                <h3 class="features__card-title">Mapa de Talentos</h3>
+                                <p class="features__card-text">
+                                    Visualize competências, potencial e sucessão em um único lugar.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="features__card features__card--green">
+                                <img src="./assets/images/pesquisa de clima.png" alt="Pesquisa de Clima"
+                                    class="features__image">
+                                <h3 class="features__card-title">Pesquisa de Clima</h3>
+                                <p class="features__card-text">
+                                    Colete feedback contínuo e acompanhe o engajamento da equipe em tempo real.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="features__card features__card--purple">
+                                <img src="./assets/images/recrutamento inteligente.png" alt="Recrutamento Inteligente"
+                                    class="features__image">
+                                <h3 class="features__card-title">Recrutamento Inteligente</h3>
+                                <p class="features__card-text">
+                                    Utilize IA para acelerar contratações e encontrar perfis aderentes.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="features__card features__card--pink">
+                                <img src="./assets/images/dashboards executivos.png" alt="Dashboards Executivos"
+                                    class="features__image">
+                                <h3 class="features__card-title">Dashboards Executivos</h3>
+                                <p class="features__card-text">
+                                    Acompanhe indicadores estratégicos com visualizações claras e acionáveis.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="features__card features__card--green">
+                                <img src="./assets/images/segurança.png" alt="Segurança e LGPD" class="features__image">
+                                <h3 class="features__card-title">Segurança e LGPD</h3>
+                                <p class="features__card-text">
+                                    Proteja informações sensíveis com processos alinhados às exigências legais.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators dots-carousel__indicators">
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#featuresCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -330,17 +435,22 @@
             <div class="custom-container section__container">
                 <div class="section__header">
                     <span class="testimonials__label">QUEM USA, RECOMENDA</span>
-                    <h2 class="section__title">O que dizem os nossos clientes</h2>
-                    <p class="section__subtitle">Empresas de diferentes portes já transformaram a gestão de pessoas com
-                        a Aurora.</p>
+                    <h2 class="section__title">
+                        O que dizem os nossos clientes
+                    </h2>
+                    <p class="section__subtitle">
+                        Empresas de diferentes portes já transformaram a gestão de pessoas com a Aurora.
+                    </p>
                 </div>
                 <div class="testimonials__grid">
                     <article class="testimonials__card">
                         <img src="./assets/images/quote-purple.svg" alt="" class="testimonials__quote-icon">
                         <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
-                        <p class="testimonials__quote">“A Aurora transformou a forma como tomamos decisões. Em três
+                        <p class="testimonials__quote">
+                            “A Aurora transformou a forma como tomamos decisões. Em três
                             meses, reduzimos custos operacionais em 22% e ganhamos visibilidade total dos nossos
-                            processos.”</p>
+                            processos.”
+                        </p>
                         <div class="testimonials__author">
                             <img src="./assets/images/avatar-mariana.svg" alt="Mariana Costa"
                                 class="testimonials__avatar">
@@ -353,9 +463,11 @@
                     <article class="testimonials__card">
                         <img src="./assets/images/quote-pink.svg" alt="" class="testimonials__quote-icon">
                         <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
-                        <p class="testimonials__quote">“A integração foi surpreendentemente simples e o suporte é
+                        <p class="testimonials__quote">
+                            “A integração foi surpreendentemente simples e o suporte é
                             excepcional. A plataforma é robusta, segura e escalou junto com o nosso crescimento sem
-                            fricção.”</p>
+                            fricção.”
+                        </p>
                         <div class="testimonials__author">
                             <img src="./assets/images/avatar-rafael.svg" alt="Rafael Oliveira"
                                 class="testimonials__avatar">
@@ -368,17 +480,100 @@
                     <article class="testimonials__card">
                         <img src="./assets/images/quote-green.svg" alt="" class="testimonials__quote-icon">
                         <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
-                        <p class="testimonials__quote">“Interface intuitiva e dados em tempo real que realmente fazem
-                            diferença. A Aurora viroupeça central na nossa estratégia de crescimento B2B.”</p>
+                        <p class="testimonials__quote">
+                            “Interface intuitiva e dados em tempo real que realmente fazem
+                            diferença. A Aurora virou peça central na nossa estratégia de crescimento B2B.”
+                        </p>
                         <div class="testimonials__author">
                             <img src="./assets/images/avatar-patricia.svg" alt="Patrícia Mendes"
                                 class="testimonials__avatar">
                             <div class="testimonials__info">
                                 <h3 class="testimonials__name">Patrícia Mendes</h3>
-                                <p class="testimonials__role">Diretora de Pessoas • Grupo Nexus</p>
+                                <p class="testimonials__role">
+                                    Diretora de Pessoas • Grupo Nexus
+                                </p>
                             </div>
                         </div>
                     </article>
+                </div>
+                <div id="testimonialsCarousel" class="carousel slide testimonials__carousel dots-carousel" data-bs-interval="false"
+                    data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <article class="testimonials__card">
+                                <img src="./assets/images/quote-purple.svg" alt="" class="testimonials__quote-icon">
+                                <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                                <p class="testimonials__quote">
+                                    “A Aurora transformou a forma como tomamos decisões. Em três
+                                    meses, reduzimos custos operacionais em 22% e ganhamos visibilidade total dos nossos
+                                    processos.”
+                                </p>
+                                <div class="testimonials__author">
+                                    <img src="./assets/images/avatar-mariana.svg" alt="Mariana Costa"
+                                        class="testimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <h3 class="testimonials__name">Mariana Costa</h3>
+                                        <p class="testimonials__role">
+                                            Gerente de RH • TechNova
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="testimonials__card">
+                                <img src="./assets/images/quote-pink.svg" alt="" class="testimonials__quote-icon">
+                                <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                                <p class="testimonials__quote">
+                                    “A integração foi surpreendentemente simples e o suporte é
+                                    excepcional. A plataforma é robusta, segura e escalou junto com o nosso crescimento
+                                    sem
+                                    fricção.”
+                                </p>
+                                <div class="testimonials__author">
+                                    <img src="./assets/images/avatar-rafael.svg" alt="Rafael Oliveira"
+                                        class="testimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <h3 class="testimonials__name">Rafael Oliveira</h3>
+                                        <p class="testimonials__role">
+                                            CEO • InovaCorp
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article class="testimonials__card">
+                                <img src="./assets/images/quote-green.svg" alt="" class="testimonials__quote-icon">
+                                <img src="./assets/images/stars.svg" alt="5 estrelas" class="testimonials__stars">
+                                <p class="testimonials__quote">
+                                    “Interface intuitiva e dados em tempo real que realmente fazem
+                                    diferença. A Aurora virou peça central na nossa estratégia de crescimento B2B.”
+                                </p>
+                                <div class="testimonials__author">
+                                    <img src="./assets/images/avatar-patricia.svg" alt="Patrícia Mendes"
+                                        class="testimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <h3 class="testimonials__name">Patrícia Mendes</h3>
+                                        <p class="testimonials__role">
+                                            Diretora de Pessoas • Grupo Nexus
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators dots-carousel__indicators">
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                        </button>
+                        <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -726,7 +921,8 @@
                         <div class="hour">
                             <p class="hour__label">Horários disponíveis</p>
                             <div class="hour__buttons">
-                                <button type="button" class="custom-btn custom-btn-ghost custom-btn-ghost--selected">14:30</button>
+                                <button type="button"
+                                    class="custom-btn custom-btn-ghost custom-btn-ghost--selected">14:30</button>
                                 <button type="button" class="custom-btn custom-btn-ghost">15:00</button>
                                 <button type="button" class="custom-btn custom-btn-ghost">15:30</button>
                             </div>
@@ -788,6 +984,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
