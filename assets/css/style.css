@@ -1338,9 +1338,13 @@ a {
 
 
     /* stats-bar */ 
-
+.stats-bar__cards { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    } 
     /* ------- */ 
-
 
     /* roi-calculator */ 
 .roi-calculator { 
@@ -1386,24 +1390,24 @@ a {
     width: 450px; 
 } 
 
-.slider__row { 
-    width: 100%; 
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-} 
+.slider__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.slider { 
-    width: 100%; 
-    flex: 1; 
-    height: 12px; 
-    margin: 0; 
-} 
+.slider {
+    width: 100%;
+    flex: 1;
+    height: 12px;
+    margin: 0;
+}
 
-.slider__value { 
-    min-width: 45px; 
-    text-align: right; 
-} 
+.slider__value {
+    min-width: 45px;
+    text-align: right;
+}
 
 .roi-calculator__result { 
     width: 100%; 
@@ -1430,9 +1434,8 @@ a {
 
 .roi-calculator__result__value { 
     display: block; 
-    font-size: var(--fs-display); 
+    font-size: var(--fs-subheading); 
     line-height: 1; 
-    font-weight: 700; 
     text-align: center; 
 } 
 
@@ -1790,7 +1793,9 @@ a {
 
 .footer__brand__description { 
     width: 100%; 
+    font-size: var(--fs-label);
     text-align: left; 
+    white-space: nowrap;
 } 
 
 .footer__itens { 
