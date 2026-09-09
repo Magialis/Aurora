@@ -2063,7 +2063,7 @@ a {
     } 
 
     .calendar__select { 
-        max-width: 200px; 
+        max-width: 100px; 
         height: 40px; 
         width: 150px; 
         border-radius: var(--radius-md);
